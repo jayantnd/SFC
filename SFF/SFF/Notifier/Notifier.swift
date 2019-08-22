@@ -15,7 +15,8 @@ class Notifier {
     private init() {}
     
     static func subscribe(subscriberName: String = #file, notificationNames: [String], callback: @escaping ((String) -> Void)) {
-        for name in notificationNames {
+        
+        notificationNames.forEach { (name) in
             if let value = container[name] {
                 value.setObject(callback as AnyObject, forKey: subscriberName as AnyObject)
             } else {
@@ -27,15 +28,14 @@ class Notifier {
     }
     
     static func unsubscribe(subscriberName: String = #file, notificationNames: [String]? = nil) {
-        
         guard let notificationNames = notificationNames else {
-            for (_, value) in container {
+            container.forEach { (key, value) in
                 value.removeObject(forKey: subscriberName as AnyObject)
             }
             return
         }
         
-        for name in notificationNames {
+        notificationNames.forEach { (name) in
             if let value = container[name] {
                 value.removeObject(forKey: subscriberName as AnyObject)
             }
@@ -48,11 +48,11 @@ class Notifier {
     
     static func notify(notificationName: String) {
         if let value = container[notificationName] {
-            for key in value.keyEnumerator().allObjects.filter({ (<#Any#>) -> Bool in
-                <#code#>
-            }) {
-                
-            }
+            value.objectEnumerator()?.forEach({ (callback) in
+                if let callback = callback as? ((String) -> Void) {
+                    callback(notificationName)
+                }
+            })
         }
     }
 }
