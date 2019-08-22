@@ -167,13 +167,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7691935A230E2381003615E8 /* Project */ = {
+		7691935A230E2381003615E8 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
 				787B642322E8EB8000C30065 /* SFF.h */,
 				787B642422E8EB8000C30065 /* Info.plist */,
 			);
-			name = Project;
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 		7691935B230E280F003615E8 /* SFF */ = {
@@ -224,7 +224,7 @@
 			children = (
 				76919366230E387B003615E8 /* GenericClasses */,
 				7691935B230E280F003615E8 /* SFF */,
-				7691935A230E2381003615E8 /* Project */,
+				7691935A230E2381003615E8 /* SupportFiles */,
 				787B64B722E940B700C30065 /* PurgeableCollections */,
 				787B64AA22E93F5900C30065 /* SpecializedSets */,
 				787B64A022E93E8500C30065 /* Indexes */,
