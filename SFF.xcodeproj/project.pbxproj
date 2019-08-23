@@ -15,6 +15,7 @@
 		76919369230E3893003615E8 /* NSMapTable+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76919367230E3893003615E8 /* NSMapTable+SFF.swift */; };
 		7691936B230E38B6003615E8 /* NSHashTable+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691936A230E38B6003615E8 /* NSHashTable+SFF.swift */; };
 		7691936C230E38B6003615E8 /* NSHashTable+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691936A230E38B6003615E8 /* NSHashTable+SFF.swift */; };
+		76919380230F942C003615E8 /* TestNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691937F230F942C003615E8 /* TestNotifier.swift */; };
 		787B642A22E8EB8000C30065 /* SFF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B642022E8EB8000C30065 /* SFF.framework */; };
 		787B642F22E8EB8000C30065 /* SFFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B642E22E8EB8000C30065 /* SFFTests.swift */; };
 		787B643122E8EB8000C30065 /* SFF.h in Headers */ = {isa = PBXBuildFile; fileRef = 787B642322E8EB8000C30065 /* SFF.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +106,7 @@
 		76919363230E37D3003615E8 /* NSPointerArray+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+SFF.swift"; sourceTree = "<group>"; };
 		76919367230E3893003615E8 /* NSMapTable+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMapTable+SFF.swift"; sourceTree = "<group>"; };
 		7691936A230E38B6003615E8 /* NSHashTable+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSHashTable+SFF.swift"; sourceTree = "<group>"; };
+		7691937F230F942C003615E8 /* TestNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNotifier.swift; sourceTree = "<group>"; };
 		787B642022E8EB8000C30065 /* SFF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		787B642322E8EB8000C30065 /* SFF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFF.h; sourceTree = "<group>"; };
 		787B642422E8EB8000C30065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,6 +203,31 @@
 			path = GenericClasses;
 			sourceTree = "<group>";
 		};
+		7691937C230F93DA003615E8 /* SFF */ = {
+			isa = PBXGroup;
+			children = (
+				7691937E230F93FE003615E8 /* Notifier */,
+			);
+			path = SFF;
+			sourceTree = "<group>";
+		};
+		7691937D230F93E9003615E8 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				787B642E22E8EB8000C30065 /* SFFTests.swift */,
+				787B643022E8EB8000C30065 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		7691937E230F93FE003615E8 /* Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				7691937F230F942C003615E8 /* TestNotifier.swift */,
+			);
+			path = Notifier;
+			sourceTree = "<group>";
+		};
 		787B641622E8EB8000C30065 = {
 			isa = PBXGroup;
 			children = (
@@ -245,8 +272,8 @@
 		787B642D22E8EB8000C30065 /* SFFTests */ = {
 			isa = PBXGroup;
 			children = (
-				787B642E22E8EB8000C30065 /* SFFTests.swift */,
-				787B643022E8EB8000C30065 /* Info.plist */,
+				7691937D230F93E9003615E8 /* SupportFiles */,
+				7691937C230F93DA003615E8 /* SFF */,
 			);
 			path = SFFTests;
 			sourceTree = "<group>";
@@ -536,6 +563,7 @@
 				787B642F22E8EB8000C30065 /* SFFTests.swift in Sources */,
 				787B644C22E8F0A200C30065 /* Data+SFF.swift in Sources */,
 				787B648B22E93A3600C30065 /* NSDataDetector+SFF.swift in Sources */,
+				76919380230F942C003615E8 /* TestNotifier.swift in Sources */,
 				787B648022E9398700C30065 /* NSLinguisticTagger+SFF.swift in Sources */,
 				787B644422E8EDBA00C30065 /* Decimal+SFF.swift in Sources */,
 				7691935F230E287B003615E8 /* Notifier.swift in Sources */,
