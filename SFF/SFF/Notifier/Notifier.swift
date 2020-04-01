@@ -7,39 +7,33 @@
 //
 
 import Foundation
+import UIKit
 
 class Notifier {
     
-    private static var container: [String: NSMapTable<AnyObject, AnyObject>] = [:]
+    private static var container: [String: [String: ((String) -> Void)]] = [:]
     
     private init() {}
     
-    static func subscribe(subscriberName: String = #file, notificationNames: [String], callback: @escaping ((String) -> Void)) {
+    static func subscribe(subscriberName: String = #file, class: String = #function, notificationNames: [String], callback: @escaping ((String) -> Void)) {
         
-        notificationNames.forEach { (name) in
-            if let value = container[name] {
-                value.setObject(callback as AnyObject, forKey: subscriberName as AnyObject)
+        let stackSymbols = Thread.callStackSymbols
+
+        
+        notificationNames.forEach { (notificationName) in
+            if var value = container[notificationName] {
+                value[subscriberName] = callback
             } else {
-                let mapTable = NSMapTable<AnyObject, AnyObject>(keyOptions: .strongMemory, valueOptions: .weakMemory)
-                mapTable.setObject(callback as AnyObject, forKey: subscriberName as AnyObject)
-                container[name] = mapTable
+                container[notificationName] = [subscriberName: callback]
             }
         }
     }
     
     static func unsubscribe(subscriberName: String = #file, notificationNames: [String]? = nil) {
-        guard let notificationNames = notificationNames else {
-            container.forEach { (key, value) in
-                value.removeObject(forKey: subscriberName as AnyObject)
-            }
-            return
-        }
         
-        notificationNames.forEach { (name) in
-            if let value = container[name] {
-                value.removeObject(forKey: subscriberName as AnyObject)
-            }
-        }
+        notificationNames?.forEach({ (notificationName) in
+            container[notificationName]?.removeValue(forKey: subscriberName)
+        })
     }
     
     static func unsubscribeAll() {
@@ -48,11 +42,9 @@ class Notifier {
     
     static func notify(notificationName: String) {
         if let value = container[notificationName] {
-            value.objectEnumerator()?.forEach({ (callback) in
-                if let callback = callback as? ((String) -> Void) {
-                    callback(notificationName)
-                }
-            })
+            for (_, value) in value {
+                value(notificationName)
+            }
         }
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760D0926243300AF00D81FEB /* Error+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D0925243300AF00D81FEB /* Error+SFF.swift */; };
+		760D0927243300AF00D81FEB /* Error+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D0925243300AF00D81FEB /* Error+SFF.swift */; };
+		7635DA11243455C500491C27 /* URLRequest+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635DA10243455C500491C27 /* URLRequest+SFF.swift */; };
+		7635DA12243455C500491C27 /* URLRequest+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635DA10243455C500491C27 /* URLRequest+SFF.swift */; };
 		7691935E230E287B003615E8 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691935D230E287B003615E8 /* Notifier.swift */; };
 		7691935F230E287B003615E8 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691935D230E287B003615E8 /* Notifier.swift */; };
 		76919364230E37D3003615E8 /* NSPointerArray+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76919363230E37D3003615E8 /* NSPointerArray+SFF.swift */; };
@@ -16,6 +20,10 @@
 		7691936B230E38B6003615E8 /* NSHashTable+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691936A230E38B6003615E8 /* NSHashTable+SFF.swift */; };
 		7691936C230E38B6003615E8 /* NSHashTable+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691936A230E38B6003615E8 /* NSHashTable+SFF.swift */; };
 		76919380230F942C003615E8 /* TestNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691937F230F942C003615E8 /* TestNotifier.swift */; };
+		76919392231D8761003615E8 /* CallStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76919391231D8761003615E8 /* CallStack.swift */; };
+		76919393231D8761003615E8 /* CallStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76919391231D8761003615E8 /* CallStack.swift */; };
+		76E9D5DA24300F5B00F7BAA6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9D5D924300F5B00F7BAA6 /* Log.swift */; };
+		76E9D5DB24300F5B00F7BAA6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9D5D924300F5B00F7BAA6 /* Log.swift */; };
 		787B642A22E8EB8000C30065 /* SFF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B642022E8EB8000C30065 /* SFF.framework */; };
 		787B642F22E8EB8000C30065 /* SFFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B642E22E8EB8000C30065 /* SFFTests.swift */; };
 		787B643122E8EB8000C30065 /* SFF.h in Headers */ = {isa = PBXBuildFile; fileRef = 787B642322E8EB8000C30065 /* SFF.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,11 +110,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		760D0925243300AF00D81FEB /* Error+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+SFF.swift"; sourceTree = "<group>"; };
+		7635DA10243455C500491C27 /* URLRequest+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+SFF.swift"; sourceTree = "<group>"; };
 		7691935D230E287B003615E8 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 		76919363230E37D3003615E8 /* NSPointerArray+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+SFF.swift"; sourceTree = "<group>"; };
 		76919367230E3893003615E8 /* NSMapTable+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMapTable+SFF.swift"; sourceTree = "<group>"; };
 		7691936A230E38B6003615E8 /* NSHashTable+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSHashTable+SFF.swift"; sourceTree = "<group>"; };
 		7691937F230F942C003615E8 /* TestNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNotifier.swift; sourceTree = "<group>"; };
+		76919391231D8761003615E8 /* CallStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStack.swift; sourceTree = "<group>"; };
+		76E9D5D924300F5B00F7BAA6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		787B642022E8EB8000C30065 /* SFF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		787B642322E8EB8000C30065 /* SFF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFF.h; sourceTree = "<group>"; };
 		787B642422E8EB8000C30065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +181,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		760D09242433007100D81FEB /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				760D0925243300AF00D81FEB /* Error+SFF.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7635DA0F2434558D00491C27 /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				7635DA10243455C500491C27 /* URLRequest+SFF.swift */,
+			);
+			path = URLRequest;
+			sourceTree = "<group>";
+		};
 		7691935A230E2381003615E8 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +209,8 @@
 		7691935B230E280F003615E8 /* SFF */ = {
 			isa = PBXGroup;
 			children = (
+				76E9D5D824300F0400F7BAA6 /* Log */,
+				76919390231D872D003615E8 /* CallStack */,
 				7691935C230E283A003615E8 /* Notifier */,
 			);
 			path = SFF;
@@ -228,6 +258,22 @@
 			path = Notifier;
 			sourceTree = "<group>";
 		};
+		76919390231D872D003615E8 /* CallStack */ = {
+			isa = PBXGroup;
+			children = (
+				76919391231D8761003615E8 /* CallStack.swift */,
+			);
+			path = CallStack;
+			sourceTree = "<group>";
+		};
+		76E9D5D824300F0400F7BAA6 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				76E9D5D924300F5B00F7BAA6 /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		787B641622E8EB8000C30065 = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +295,8 @@
 		787B642222E8EB8000C30065 /* SFF */ = {
 			isa = PBXGroup;
 			children = (
+				7635DA0F2434558D00491C27 /* URLRequest */,
+				760D09242433007100D81FEB /* Error */,
 				76919366230E387B003615E8 /* GenericClasses */,
 				7691935B230E280F003615E8 /* SFF */,
 				7691935A230E2381003615E8 /* SupportFiles */,
@@ -518,6 +566,7 @@
 				787B646E22E911BF00C30065 /* NSRange+SFF.swift in Sources */,
 				787B646522E9114C00C30065 /* NSRect+SFF.swift in Sources */,
 				787B645222E8F0FD00C30065 /* URLComponents+SFF.swift in Sources */,
+				76919392231D8761003615E8 /* CallStack.swift in Sources */,
 				787B645F22E9111500C30065 /* NSPoint+SFF.swift in Sources */,
 				787B648A22E93A3600C30065 /* NSDataDetector+SFF.swift in Sources */,
 				787B644B22E8F0A200C30065 /* Data+SFF.swift in Sources */,
@@ -535,6 +584,7 @@
 				76919368230E3893003615E8 /* NSMapTable+SFF.swift in Sources */,
 				787B646B22E9118100C30065 /* NSEdgeInsets+SFF.swift in Sources */,
 				787B64B522E940A600C30065 /* NSCache+SFF.swift in Sources */,
+				76E9D5DA24300F5B00F7BAA6 /* Log.swift in Sources */,
 				787B647922E9128100C30065 /* NSMutableAttributedString+SFF.swift in Sources */,
 				787B64B222E9407000C30065 /* NSMutableOrderedSet+SFF.swift in Sources */,
 				787B644022E8ED8E00C30065 /* Double+SFF.swift in Sources */,
@@ -546,9 +596,11 @@
 				787B643D22E8ED6A00C30065 /* Int+SFF.swift in Sources */,
 				787B649122E93AF200C30065 /* UUID+SFF.swift in Sources */,
 				787B64AC22E93FCE00C30065 /* NSCountedSet+SFF.swift in Sources */,
+				760D0926243300AF00D81FEB /* Error+SFF.swift in Sources */,
 				787B644622E8EDD300C30065 /* NumberFormatter+SFF.swift in Sources */,
 				787B648D22E93A5800C30065 /* NSTextCheckingResult+SFF.swift in Sources */,
 				76919364230E37D3003615E8 /* NSPointerArray+SFF.swift in Sources */,
+				7635DA11243455C500491C27 /* URLRequest+SFF.swift in Sources */,
 				787B648722E93A1300C30065 /* NSRegularExpression+SFF.swift in Sources */,
 				787B646822E9116400C30065 /* AffineTransform+SFF.swift in Sources */,
 				787B64AF22E9405100C30065 /* NSOrderedSet+SFF.swift in Sources */,
@@ -561,6 +613,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				787B642F22E8EB8000C30065 /* SFFTests.swift in Sources */,
+				7635DA12243455C500491C27 /* URLRequest+SFF.swift in Sources */,
+				76E9D5DB24300F5B00F7BAA6 /* Log.swift in Sources */,
 				787B644C22E8F0A200C30065 /* Data+SFF.swift in Sources */,
 				787B648B22E93A3600C30065 /* NSDataDetector+SFF.swift in Sources */,
 				76919380230F942C003615E8 /* TestNotifier.swift in Sources */,
@@ -590,8 +644,10 @@
 				787B643E22E8ED6A00C30065 /* Int+SFF.swift in Sources */,
 				787B648E22E93A5800C30065 /* NSTextCheckingResult+SFF.swift in Sources */,
 				787B649F22E93E3500C30065 /* Set+SFF.swift in Sources */,
+				76919393231D8761003615E8 /* CallStack.swift in Sources */,
 				787B649222E93AF200C30065 /* UUID+SFF.swift in Sources */,
 				787B64A622E93ED800C30065 /* IndexSet+SFF.swift in Sources */,
+				760D0927243300AF00D81FEB /* Error+SFF.swift in Sources */,
 				787B645622E8F12000C30065 /* URLQueryItem+SFF.swift in Sources */,
 				787B649622E93DFD00C30065 /* Array+SFF.swift in Sources */,
 				787B648822E93A1300C30065 /* NSRegularExpression+SFF.swift in Sources */,
