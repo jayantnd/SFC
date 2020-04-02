@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/Jayant_dash"
   s.ios.deployment_target = "10.0"
   s.swift_versions = ['5.1', '5.2']
-  s.source       = { :git => "https://github.com/jayantnd/SFF.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/jayantnd/SFF.git", :branch => "master", :tag => s.version.to_s }
   s.source_files  = "SFF", "SFF/**/*.{swift,h,m}"
   s.public_header_files = "SFF/**/*.h"
   s.requires_arc = true
