@@ -17,9 +17,6 @@ class Notifier {
     
     static func subscribe(subscriberName: String = #file, class: String = #function, notificationNames: [String], callback: @escaping ((String) -> Void)) {
         
-        let stackSymbols = Thread.callStackSymbols
-
-        
         notificationNames.forEach { (notificationName) in
             if var value = container[notificationName] {
                 value[subscriberName] = callback
