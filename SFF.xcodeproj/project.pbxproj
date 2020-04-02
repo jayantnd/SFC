@@ -11,6 +11,8 @@
 		760D0927243300AF00D81FEB /* Error+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D0925243300AF00D81FEB /* Error+SFF.swift */; };
 		7635DA11243455C500491C27 /* URLRequest+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635DA10243455C500491C27 /* URLRequest+SFF.swift */; };
 		7635DA12243455C500491C27 /* URLRequest+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635DA10243455C500491C27 /* URLRequest+SFF.swift */; };
+		7635DA292435877E00491C27 /* NSCountedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635DA282435877E00491C27 /* NSCountedSet+SFF.swift */; };
+		7635DA2A2435877E00491C27 /* NSCountedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635DA282435877E00491C27 /* NSCountedSet+SFF.swift */; };
 		7691935E230E287B003615E8 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691935D230E287B003615E8 /* Notifier.swift */; };
 		7691935F230E287B003615E8 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691935D230E287B003615E8 /* Notifier.swift */; };
 		76919364230E37D3003615E8 /* NSPointerArray+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76919363230E37D3003615E8 /* NSPointerArray+SFF.swift */; };
@@ -87,8 +89,6 @@
 		787B64A322E93E9900C30065 /* IndexPath+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64A122E93E9900C30065 /* IndexPath+SFF.swift */; };
 		787B64A522E93ED800C30065 /* IndexSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64A422E93ED800C30065 /* IndexSet+SFF.swift */; };
 		787B64A622E93ED800C30065 /* IndexSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64A422E93ED800C30065 /* IndexSet+SFF.swift */; };
-		787B64AC22E93FCE00C30065 /* NSCountedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64AB22E93FCE00C30065 /* NSCountedSet+SFF.swift */; };
-		787B64AD22E93FCE00C30065 /* NSCountedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64AB22E93FCE00C30065 /* NSCountedSet+SFF.swift */; };
 		787B64AF22E9405100C30065 /* NSOrderedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64AE22E9405100C30065 /* NSOrderedSet+SFF.swift */; };
 		787B64B022E9405100C30065 /* NSOrderedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64AE22E9405100C30065 /* NSOrderedSet+SFF.swift */; };
 		787B64B222E9407000C30065 /* NSMutableOrderedSet+SFF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B64B122E9407000C30065 /* NSMutableOrderedSet+SFF.swift */; };
@@ -112,6 +112,7 @@
 /* Begin PBXFileReference section */
 		760D0925243300AF00D81FEB /* Error+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+SFF.swift"; sourceTree = "<group>"; };
 		7635DA10243455C500491C27 /* URLRequest+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+SFF.swift"; sourceTree = "<group>"; };
+		7635DA282435877E00491C27 /* NSCountedSet+SFF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCountedSet+SFF.swift"; sourceTree = "<group>"; };
 		7691935D230E287B003615E8 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 		76919363230E37D3003615E8 /* NSPointerArray+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+SFF.swift"; sourceTree = "<group>"; };
 		76919367230E3893003615E8 /* NSMapTable+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMapTable+SFF.swift"; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		787B649D22E93E3500C30065 /* Set+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+SFF.swift"; sourceTree = "<group>"; };
 		787B64A122E93E9900C30065 /* IndexPath+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+SFF.swift"; sourceTree = "<group>"; };
 		787B64A422E93ED800C30065 /* IndexSet+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexSet+SFF.swift"; sourceTree = "<group>"; };
-		787B64AB22E93FCE00C30065 /* NSCountedSet+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCountedSet+SFF.swift"; sourceTree = "<group>"; };
 		787B64AE22E9405100C30065 /* NSOrderedSet+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSOrderedSet+SFF.swift"; sourceTree = "<group>"; };
 		787B64B122E9407000C30065 /* NSMutableOrderedSet+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableOrderedSet+SFF.swift"; sourceTree = "<group>"; };
 		787B64B422E940A600C30065 /* NSCache+SFF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+SFF.swift"; sourceTree = "<group>"; };
@@ -437,7 +437,7 @@
 		787B64AA22E93F5900C30065 /* SpecializedSets */ = {
 			isa = PBXGroup;
 			children = (
-				787B64AB22E93FCE00C30065 /* NSCountedSet+SFF.swift */,
+				7635DA282435877E00491C27 /* NSCountedSet+SFF.swift */,
 				787B64AE22E9405100C30065 /* NSOrderedSet+SFF.swift */,
 				787B64B122E9407000C30065 /* NSMutableOrderedSet+SFF.swift */,
 			);
@@ -528,6 +528,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 787B641622E8EB8000C30065;
 			productRefGroup = 787B642122E8EB8000C30065 /* Products */;
@@ -576,6 +577,7 @@
 				787B644322E8EDBA00C30065 /* Decimal+SFF.swift in Sources */,
 				787B648222E9399E00C30065 /* Scanner+SFF.swift in Sources */,
 				787B645522E8F12000C30065 /* URLQueryItem+SFF.swift in Sources */,
+				7635DA292435877E00491C27 /* NSCountedSet+SFF.swift in Sources */,
 				787B649E22E93E3500C30065 /* Set+SFF.swift in Sources */,
 				787B647622E9126700C30065 /* NSAttributedString+SFF.swift in Sources */,
 				787B644F22E8F0E400C30065 /* URL+SFF.swift in Sources */,
@@ -595,7 +597,6 @@
 				787B647322E9124100C30065 /* String+SFF.swift in Sources */,
 				787B643D22E8ED6A00C30065 /* Int+SFF.swift in Sources */,
 				787B649122E93AF200C30065 /* UUID+SFF.swift in Sources */,
-				787B64AC22E93FCE00C30065 /* NSCountedSet+SFF.swift in Sources */,
 				760D0926243300AF00D81FEB /* Error+SFF.swift in Sources */,
 				787B644622E8EDD300C30065 /* NumberFormatter+SFF.swift in Sources */,
 				787B648D22E93A5800C30065 /* NSTextCheckingResult+SFF.swift in Sources */,
@@ -628,6 +629,7 @@
 				787B646F22E911BF00C30065 /* NSRange+SFF.swift in Sources */,
 				787B647A22E9128100C30065 /* NSMutableAttributedString+SFF.swift in Sources */,
 				787B644722E8EDD300C30065 /* NumberFormatter+SFF.swift in Sources */,
+				7635DA2A2435877E00491C27 /* NSCountedSet+SFF.swift in Sources */,
 				787B644122E8ED8E00C30065 /* Double+SFF.swift in Sources */,
 				787B646C22E9118100C30065 /* NSEdgeInsets+SFF.swift in Sources */,
 				7691936C230E38B6003615E8 /* NSHashTable+SFF.swift in Sources */,
@@ -640,7 +642,6 @@
 				787B647D22E9129F00C30065 /* CharacterSet+SFF.swift in Sources */,
 				787B64BA22E9410000C30065 /* NSPurgeableData+SFF.swift in Sources */,
 				787B646022E9111500C30065 /* NSPoint+SFF.swift in Sources */,
-				787B64AD22E93FCE00C30065 /* NSCountedSet+SFF.swift in Sources */,
 				787B643E22E8ED6A00C30065 /* Int+SFF.swift in Sources */,
 				787B648E22E93A5800C30065 /* NSTextCheckingResult+SFF.swift in Sources */,
 				787B649F22E93E3500C30065 /* Set+SFF.swift in Sources */,
@@ -723,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -781,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -811,6 +812,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayant.SFF;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -838,6 +840,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayant.SFF;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
